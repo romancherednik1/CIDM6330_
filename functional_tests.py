@@ -56,8 +56,8 @@ class NewVisitorTest(unittest.TestCase):
         rows = table.find_elements_by_tag_name('tr')
         self.assertIn('1: Buy peacock feathers', [row.text for row in rows])
         self.assertIn(
-        '2: Use peacock feathers to make a fly',
-         [row.text for row in rows]
+            '2: Use peacock feathers to make a fly',
+             [row.text for row in rows]
         )
 
         # Edith wonders whether the site will remember her list. Then she sees
@@ -66,3 +66,6 @@ class NewVisitorTest(unittest.TestCase):
         self.fail('Finish the test!')
 
         # She visits that URL - her to-do list is still there.
+
+if __name__ == '__main__':  
+    unittest.main(warnings='ignore')  
